@@ -56,6 +56,10 @@ import java.lang.annotation.Target;
 public @interface Import {
 
 	/**
+	 * 1、导入类
+	 * 2、Configuration 导入其他的配置类
+	 * 3、ImportSelector ImportSelector强调的是复用性，使用它需要自建一个类
+	 * 4、ImportBeanDefinitionRegistrar Bean定义信息注册中心：图纸中心; 它里面都是BeanDefinition
 	 * {@link Configuration @Configuration}, {@link ImportSelector},
 	 * {@link ImportBeanDefinitionRegistrar}, or regular component classes to import.
 	 */

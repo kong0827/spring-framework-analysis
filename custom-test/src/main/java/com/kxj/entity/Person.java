@@ -1,5 +1,7 @@
 package com.kxj.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 /**
  * @author kxj
@@ -9,6 +11,10 @@ package com.kxj.entity;
 public class Person {
 
 	private String name;
+
+	public Person(String name) {
+		this.name = name;
+	}
 
 	public String getName() {
 		return name;
